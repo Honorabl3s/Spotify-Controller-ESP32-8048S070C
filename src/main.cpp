@@ -9,11 +9,11 @@
 #include <TJpg_Decoder.h>
 
 
-const char* ssid = "tea";
-const char* password = "12345678";
-const char* client_id = "83ca87883a7341309d8c5a004f268e9d";
-const char* client_secret = "f7dd8473c49441059b9a1dd15e291d0d";
-const char* refresh_token = "AQC1NK2qV468pk3M2Sdd-LE8kPnQQnJiCLlMkfSH6OcoWiz85_kL7GD96EzWwaC489oVwTdvl7qi_356qJUAdoSrbXmGdoPMOy1p0j8yxFH8aqdn3IwBrrRzs1MT_scMoZw";
+const char* ssid = ""; //WIFI SSID
+const char* password = ""; //WIFI Password
+const char* client_id = ""; //Spotify Client ID
+const char* client_secret = ""; //Spotify Client Secret
+const char* refresh_token = ""; // Dapatkan refresh token dengan mengikuti langkah-langkah di https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow
 
 String access_token = "";
 unsigned long lastTime = 0;
