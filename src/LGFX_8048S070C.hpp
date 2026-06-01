@@ -2,14 +2,14 @@
 #include <Arduino.h>
 #define LGFX_USE_V1
 #include <LovyanGFX.hpp>
-#include <lgfx/v1/platforms/esp32s3/Panel_RGB.hpp> // Tambahkan baris ini
-#include <lgfx/v1/platforms/esp32s3/Bus_RGB.hpp>   // Tambahkan baris ini
+#include <lgfx/v1/platforms/esp32s3/Panel_RGB.hpp>
+#include <lgfx/v1/platforms/esp32s3/Bus_RGB.hpp>
 
 class LGFX : public lgfx::LGFX_Device {
     lgfx::Panel_RGB     _panel_instance;
     lgfx::Bus_RGB       _bus_instance;
     lgfx::Light_PWM     _light_instance;
-    lgfx::Touch_GT911   _touch_instance; // Modul 7" biasanya menggunakan GT911 Capacitive Touch
+    lgfx::Touch_GT911   _touch_instance;
 
 public:
     LGFX(void) {
@@ -17,7 +17,6 @@ public:
             auto cfg = _bus_instance.config();
             cfg.panel = &_panel_instance;
             
-            // Konfigurasi Pin RGB (Spesifik untuk ESP32-8048S070C)
             cfg.pin_d0  = 15; // B0
             cfg.pin_d1  = 7;  // B1
             cfg.pin_d2  = 6;  // B2
@@ -41,15 +40,14 @@ public:
             cfg.pin_pclk    = 42;
             cfg.freq_write  = 12000000;
 
-            // Timing sinkronisasi layar 800x480
-           cfg.hsync_polarity    = 0;
-            cfg.hsync_front_porch = 40; // Diperlebar
-            cfg.hsync_pulse_width = 48; // Diperlebar
-            cfg.hsync_back_porch  = 40; // Diperlebar
+            cfg.hsync_polarity    = 0;
+            cfg.hsync_front_porch = 40;
+            cfg.hsync_pulse_width = 48;
+            cfg.hsync_back_porch  = 40;
             cfg.vsync_polarity    = 0;
             cfg.vsync_front_porch = 1;
-            cfg.vsync_pulse_width = 31; // Diperlebar
-            cfg.vsync_back_porch  = 13; // Diperlebar
+            cfg.vsync_pulse_width = 31;
+            cfg.vsync_back_porch  = 13;
             cfg.pclk_idle_high    = 0;
             cfg.de_idle_high      = 0;
             cfg.pclk_active_neg   = 1;
@@ -69,7 +67,7 @@ public:
         }
         {
             auto cfg = _light_instance.config();
-            cfg.pin_bl = 2; // Pin Backlight
+            cfg.pin_bl = 2;
             cfg.freq   = 44100;
             cfg.pwm_channel = 7;
             _light_instance.config(cfg);
