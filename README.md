@@ -4,7 +4,7 @@
 ![LVGL](https://img.shields.io/badge/LVGL-v8.x-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-![S-CLASS UI Preview](![alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/Real%20Life%20UI.png))
+[S-CLASS UI Preview][alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/Real%20Life%20UI.png)
 
 Highly responsive Spotify controller built on the ESP32-8048S070C (7-inch capacitive touch display). Designed to bridge the gap between robust engineering and digital arts, this project brings a commercial-grade UI/UX to your DIY setup—perfect for studio monitors, DJ decks, or a modern desktop companion.
 
@@ -31,7 +31,7 @@ This repository contains the core `main.cpp` and `platformio.ini` configuration.
 ## 💎 Get the Premium Package (Plug & Play)
 Don't want to spend hours designing the UI, struggling with PlatformIO library configurations, or figuring out how to fetch the Spotify API Token? This premium package is your ultimate shortcut!
 
-![Premium Package Teaser](![alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/ImgCover.png))
+[Premium Package Teaser]![alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/ImgCover.png)
 
 Spotify-Controller is an interactive Spotify controller specifically designed for the ESP32-8048S070C. It is perfect for enhancing your desk setup, studio monitors, or even serving as an eye-catching addition to your personal workspace.
 
