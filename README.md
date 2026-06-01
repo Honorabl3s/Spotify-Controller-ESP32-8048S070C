@@ -4,7 +4,7 @@
 ![LVGL](https://img.shields.io/badge/LVGL-v8.x-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-[S-CLASS UI Preview][alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/Real%20Life%20UI.png)
+[S-CLASS UI Preview]![alt text](https://github.com/Honorabl3s/Spotify-Controller-ESP32-8048S070C/blob/main/Real%20Life%20UI.png)
 
 Highly responsive Spotify controller built on the ESP32-8048S070C (7-inch capacitive touch display). Designed to bridge the gap between robust engineering and digital arts, this project brings a commercial-grade UI/UX to your DIY setup—perfect for studio monitors, DJ decks, or a modern desktop companion.
 
