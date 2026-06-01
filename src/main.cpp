@@ -175,8 +175,6 @@ void getCurrentlyPlaying() {
     int progSec = progressMs / 1000;
     int durSec = durationMs / 1000;
     
-    // --- FITUR 1: PELINDUNG SAAT ARC SEDANG DIGESER ---
-    // Hanya perbarui garis secara otomatis jika pengguna tidak sedang menyentuh layar
     if (!lv_obj_has_state(ui_SliderProgress, LV_STATE_PRESSED)) {
         lv_arc_set_range(ui_SliderProgress, 0, durSec);
         lv_arc_set_value(ui_SliderProgress, progSec);
@@ -188,7 +186,6 @@ void getCurrentlyPlaying() {
                  
         lv_label_set_text(ui_SongTime, timeString);
     }
-    // ---------------------------------------------------
 
     if (songName != "null" && songName != currentSongName) {
         currentSongName = songName; 
@@ -263,13 +260,11 @@ void controlSpotify(String endpoint, String method) {
     http.end();
 }
 
-// --- FITUR 2: FUNGSI UNTUK MENANGKAP GESERAN JARI ---
 static void arc_progress_cb(lv_event_t * e) {
     lv_event_code_t code = lv_event_get_code(e);
     lv_obj_t * arc = lv_event_get_target(e);
     int targetSec = lv_arc_get_value(arc);
     
-    // Saat sedang digeser: Perbarui teks waktu agar sesuai letak jari (Live Feedback)
     if (code == LV_EVENT_VALUE_CHANGED) {
         int durSec = lv_arc_get_max_value(arc);
         char timeString[16];
@@ -278,7 +273,6 @@ static void arc_progress_cb(lv_event_t * e) {
                  (durSec / 60), (durSec % 60));
         lv_label_set_text(ui_SongTime, timeString);
     }
-    // Saat jari dilepaskan: Kirim posisi waktu yang dituju ke Spotify
     else if (code == LV_EVENT_RELEASED) {
         int targetMs = targetSec * 1000;
         String endpoint = "seek?position_ms=" + String(targetMs);
@@ -286,7 +280,6 @@ static void arc_progress_cb(lv_event_t * e) {
         controlSpotify(endpoint, "PUT");
     }
 }
-// ----------------------------------------------------
 
 static void btn_prev_cb(lv_event_t * e) { 
     lv_timer_handler();
@@ -366,9 +359,7 @@ void setup() {
     lv_obj_add_event_cb(ui_BtnPlay, btn_play_cb, LV_EVENT_CLICKED, NULL);
     lv_obj_add_event_cb(ui_BtnPause, btn_pause_cb, LV_EVENT_CLICKED, NULL); 
 
-    // --- FITUR 3: MENDAFTARKAN EVENT ARC (Geser) ---
     lv_obj_add_event_cb(ui_SliderProgress, arc_progress_cb, LV_EVENT_ALL, NULL);
-    // -----------------------------------------------
 
     Serial.print("Menghubungkan ke Wi-Fi");
     WiFi.begin(ssid, password);
