@@ -4,7 +4,7 @@
 ![LVGL](https://img.shields.io/badge/LVGL-v8.x-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-S-CLASS Smart Music Hub is a premium, highly responsive Spotify controller built on the ESP32-8048S070C (7-inch capacitive touch display). Designed to bridge the gap between robust engineering and digital arts, this project brings a commercial-grade UI/UX to your DIY setup—perfect for studio monitors, DJ decks, or a modern desktop companion.
+Highly responsive Spotify controller built on the ESP32-8048S070C (7-inch capacitive touch display). Designed to bridge the gap between robust engineering and digital arts, this project brings a commercial-grade UI/UX to your DIY setup—perfect for studio monitors, DJ decks, or a modern desktop companion.
 
 ## ✨ Key Features
 * **Highly Responsive UI:** Play/Pause UI elements react instantly to touch, cleverly masking API network delays to provide a seamless user experience.
@@ -27,16 +27,18 @@ This repository contains the core `main.cpp` and `platformio.ini` configuration.
 ---
 
 ## 💎 Get the Premium Package (Plug & Play)
-Don't want to spend hours designing the UI, configuring SquareLine Studio, or dealing with API token generation? 
+Don't want to spend hours designing the UI, struggling with PlatformIO library configurations, or figuring out how to fetch the Spotify API Token? This premium package is your ultimate shortcut!
 
-I have prepared a **Complete Premium Package** on my Trakteer!
+Spotify-Controller is an interactive Spotify controller specifically designed for the ESP32-8048S070C. It is perfect for enhancing your desk setup, studio monitors, or even serving as an eye-catching addition to your personal workspace.
+
 👉 **[Support me on Trakteer & Download the Full Project here](LINK_TRAKTEER_KAMU_DI_SINI)**
 
-**What's inside the Premium ZIP?**
-1. 📁 **SquareLine Studio Project (.spj):** Fully editable UI project. Change colors, layouts, or add your DJ group's logo effortlessly!
-2. 📁 **Ready-to-Compile PlatformIO Folder:** 100% plug-and-play. No library version hunting required.
-3. 📄 **Comprehensive PDF Guide:** Step-by-step instructions on wiring, driver installations, and exactly how to generate your Spotify API Tokens without the headache.
-4. 🎨 **HD Assets:** All transparent PNG icons used in the project.
+**📦 What will you get inside this ZIP file?**
+* 📁 **Spotify_ControllerV2:** The raw, 100% editable UI project file (`.spj`). You are free to change colors, layouts, or add your own music group's logo.
+* 📁 **Spotify-Controller-ESP32-8048S070C-main:** A complete, ready-to-use C++ project. All libraries (LVGL, LovyanGFX, ArduinoJson) are fully configured. Just insert your WiFi & Spotify Token, then click Upload.
+* 📄 **Spotify_Controller_ESP32_8048S070C_Setup_Guide.pdf:** A highly beginner-friendly, step-by-step guide, including a secret trick to get the Spotify API Refresh Token without needing to code a web server at all!
+
+Your support means a lot in helping the development of future open-source projects and IoT innovations. Happy building! 🚀
 
 ---
 
