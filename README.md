@@ -35,7 +35,7 @@ Don't want to spend hours designing the UI, struggling with PlatformIO library c
 
 Spotify-Controller is an interactive Spotify controller specifically designed for the ESP32-8048S070C. It is perfect for enhancing your desk setup, studio monitors, or even serving as an eye-catching addition to your personal workspace.
 
-👉 **[Support me on Trakteer & Download the Full Project here](LINK_TRAKTEER_KAMU_DI_SINI)**
+👉 **[Support me on Trakteer & Download the Full Project here](https://trakteer.id/valentino-heman-ou3k9/shop/spotify-controller-esp32-8048s070c-t6iT8)**
 
 **📦 What will you get inside this ZIP file?**
 * 📁 **Spotify_ControllerV2:** The raw, 100% editable UI project file (`.spj`). You are free to change colors, layouts, or add your own music group's logo.
